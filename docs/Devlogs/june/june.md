@@ -1,74 +1,74 @@
-# Progress as of June 2023
+# Progreso hasta junio 2023
 
-This month has been unusually productive, possibly because a number of our team members have started summer vacation. But, before we get to that:
+este me a sido inusualmente productivo, posiblemente por que mucho de los miembros del equipo tienen vacaciones de verano. pero antes de entrar a eso:
 
-## New team members
+## Nuevos miembros del equipo
 
-- BrickPi: BrickPi is another developer who is also part of the OpenVic2 project. For us, BrickPi has contributed an upgrade that allows new windows developers to rely on the installation path of their copy of Victoria 2 for development rather than having to manually spell it out to get started.
-- Breizh: While new to the team, Breizh has been part of our discord since the very first days. And, despite being new, has contributed a ton of work this month towards completing the UI.
-- Ivysaur: Ivysaur is also someone who has been with us on discord since the beginning. Ivysaur joined at the very end of the month, and currently hasn't had time to contribute more than a few tool tips.
+- BrickPi:es otro desarrollador que es part del proyecto "Open Vic 2". BrickPi nos a contribuido una mejora que permite a los desarrolladores en windows usar su copia local de Victoria 2, en vez de ponerla manualmente para comenzar.
+- Breizh: mientras que nuevo al equipo, Breizh a estado en el discord desde hace un tiempo. A pesar de ser nuevo, a contribuido una gran cantidad de trabajo para terminar la interfaze de usuario.
+- Ivysaur: Ivysaur tambien a estado en el discord desde el principio. Ivysaur se unio al equipo al final del mes, y no a tenido el tiempo para hacer algo diferente a tooltips.
 
-## Team Q&A
+## P&R del equipo
 
-This month we asked Erik, one of the four founding members of Project Alice and a major contributor to [SOE](https://github.com/symphony-of-empires/symphony-of-empires): "How has working on Project Alice been different from working on SOE?"
+Este mes le preguntamos a Erik, uno de los cuatros fundadores del projecto y un gran contruibidor de [SDI](https://github.com/symphony-of-empires/symphony-of-empires): "Como hasido trbajar en Alicia comparado con SDI"
 
-> Working on Alice has been significantly smoother, thanks both to having clearer goals and the experience gained from working on SoE. It has been incredibly helpful having worked on a map game before. Progress on Project Alice has also been much faster, which is largely thanks to the excellent work done by all contributors. Another factor is that feature creep is mostly non-existent here.
+> Trabajar en Alicia a sido más facil, gracias a la experiencia de SDI y los objetivos más claros. Haver trbajado en un mapa antes fue de gran ayuda. El progreso en Alicia hasido rapido gracias al exelenta trabajo hecho por los contribuidores. otro factor es que en Alice se intenta prevenir el Síndrome del lavadero.
 > 
-> There has been a greater interest in this project, which is to be expected given the large demand for an open source Victoria 2 (just look at the number of forks of Open V2). I'm looking forward to the huge modding potential once 1.0 is completed. Modding in Vic2 is rather limited, and that's something I would like to see improved.
+> Debido a la demanda por una version de codigo abierto de victoria 2 (solo miren la cantidad de forks de Open V2) el interes en Alicia a incrementado. Tengo altas espectativas para la capacidad de modificaciones que va tener Alice cuando slaga la version 1.0. Lo que podemos modificar en victoria 2 es muy limitado, y quiero ver como podemos mejorarlo.
 
-## UI progress
+## progreso en la interface de usuario
 
-As hinted at last month, work on the globe has progressed. To make the standard Victoria 2 map work on the globe we have added some blank space to the poles. It isn't a perfect solution, but it does a pretty good job. We are also working on a full map of the globe with a proper projection based on the Open V2 map, and hopefully we will be able to release version 1.0 with that as an additional option for unmodded games. (The traditional flat map also remains available via a menu option, but I have felt no temptation to go back to it.)
+Como indicamos en los meses pasado, el progreso en el globo a continuado. para hacer que el mapa de victoria 2 funcione en un globo emos añadido parches en los polos.No es una solución perfecta, pero funciona. estamos trbajando en una version completa del globo con la misma projección que en victoria 2 y esperamos sacar la version 1.0 con esto como una opción para partidas sin mods. (El mapa tradicional aun es una opción pero no eh sentido necesidad de usarlo.)
 
-![Globe](globe.png)
+![Globo](globe.png)
 
-But what we have been mostly focusing on this month is implementing user actions and the ui required to support them. One immediately noticeable addition are events.
+Este mes nos centramos en la interface de usuario, por ejemplo, los eventos.
 
-![An event](event.png)
+![Un evento](event.png)
 
-In this event illustrates a number of interesting things. The blue text will eventually be turned into hyperlinks that, when clicked, will take you to the named province, state, or nation. You can also see the arrows--still a bit of a work in progress--that will help organize things for you when multiple events are occurring at once. The tool tip also shows that the effects specified in the files are being processed correctly, and your event choices do work as expected when you make them (barring any bugs).
+En este evento se ven varias cosas interesantes. El texto azul se va a convertir en hypertextop que te va a llevar a la provincia, estado o nación nombrada. Puedes ver las lineas --aun en desarrollo-- que van a ayudar a organizar los eventos cuando tengas multiples de estos. El tool tipmuestra que los efectos de los archivos fueron procesados correctamente, y (con la exepción de unos errores) funcionan correctamente.
 
-![factory construction](factories.png)
+![Construcción de fabricas](factories.png)
 
-Constructions of all sorts, including factories, military units, and provincial buildings like forts have also made their way in. Above you can see a cloth factory mid construction.
+Construciones de todos los tipos, desde fabricas, unidades militares, hasta edificios provinciales como los fuertes an sido implementados. Arriba puedes ver la construción de una fabrica de telas.
 
-![build factory window](buildwindow.png)
+![ventana de construcción de fabricas](buildwindow.png)
 
-Above is the--only partially completed--window for building factories. I included this simply because it shows how the unnecessary description of what paper is used for, originally featured in Victoria 1, still survives. It always makes me laugh.
+Arriba pueden ver --la parcialmente incompleta-- ventana de construcción de fabricas. Inclui esto para mostrar que tan inutil es la descripción del papel que ah sobrevivido desde victoria 1. Aun me da riza.
 
-![top bar](tech.png)
+![Barra superior](tech.png)
 
-This small snippet shows a new tech in the middle of being researched, as well as the newly-implemented line graphs (courtesy of forn).
+Esta pequeña imagen muestra una tecnologia siendo investigada, y los graficos de linea (hecha por forn).
 
-![release nation window](release.png)
+![Liberal naciones](release.png)
 ![ireland](ireland.png)
 
-Releasing nations (and optionally switching to play as them) has also been added. Above you can see both the release nation dialog box (with obviously some work still needing to be done with the text color) and the result of releasing Ireland.
+ya puedes liberar naciones y jugar como ellas. Arriba puedes ver el cuadro de dialogo al liberar naciones (aun estamos trabajando en el color del texto) y a Irelanda despues de ser liberada.
 
-![diplomacy window](diplomacy.png)
+![Ventana de diplomacia](diplomacy.png)
 
-Here we can see that it is possible to gain influence and increase your relations with someone. Most of the influence actions and simple diplomatic actions have been implemented. However, without a real AI, our placeholder functionality defaults to accepting all military access requests and rejecting all alliance requests.
+Aquí podemos ver qué es posible ganar influenia y mejorar sus relaciones con alguien. La mayoría de las acciones de influencia y las acciones diplomáticas básicas se han implementado. Sin embargo, sin una IA real, nuestra funcional temporal tiende a aceptar todas las peticiones de invasión y rechazar todas las peticiones de alianzas.
 
-There is not enough space to screen shot all of the other actions that have been added, but here is the list: change national focus, start research, build province buildings, increase relations, decrease relations, build factories, build ships, build regiments, cancel unit construction, change factory priority, delete factories, release nation, play as nation, give/cancel war subsidies, change budget settings, start an election, change influence priority, discredit advisors, expel advisors, ban embassy, increase opinion, decrease opinion, add to sphere, remove from sphere, turn a colony into a state, invest in a colonial race, intervene in war, suppress a movement, westernize, appoint ruling party, adopt/repeal a reform, join a crisis, change stockpile settings, take a decision, make an event choice, fabricate a casus belli, ask for military access, ask for an alliance. Yeah, it is a lot of stuff.
+No existe suficiente espacio para incluir capturas de pantalla de todas las otras acciones que han Sido añadidas, pero he aquí la lista: cambio en el foco nacional, empezar investigacioned, construir edificios de provincia, mejorar relaciones, construir fábricas, construir barcos, armar regimientos, cancelar la instrucción de unidades, cambiar la prioridad de las fábricas, eliminar fábricas,  liberar nación, jugar como nación, dar y retirar subsidios de guerra, cambiar parámetros de presupuestos, iniciar una elección,cambiar la prioridad de influencia, desacreditar a asesores, expulsar asesores, prohibir embajadas, mejorar la opinión pública, empeorar la opinión pública, añadir a la esfera de influencia, remover de esfera de influencia ñ, convertir colonia en estado, invertir en una taza colonial, intervenir en una guerra, suprimir un movimiento, occidentalizar, poner un partido dominante, adoptar o repeler una reforma, unirse a una crisis, cambiar los parámetros de inventario, tomar una decisión, tomar una decisión frente a un evento, fabricar una cadus belli, solicitar acceso militar, pedir una alianza. 
 
-## Internals
+## Internos
 
-A first draft of almost everything required for the game's daily update, outside of the military, has been added. That includes things ranging from pop migration, to elections, to rebel movements, to events, to constructing units and buildings. Of course, this early in development, there are probably still plenty of bugs hiding inside, but it is satisfying to see most of the world behaving roughly like it should.
+Un primer bosquejo de casi todo lo requerido para la actualización interna continua del juego, sin contar lo militar, ha Sido añadido. Esto incluye aspectos que van desde la migración de Pops, a elecciones, movimientos rebeldes, a eventos, a construcción de unidades y edificios.  Por supuesto, esto estando en desarrollo temprano, es probable que haya bastantes Bugs, pero es satisfactorio ver a la mayoría del juego comportándose como debería en términos generales. 
 
-## International relations
+## Relaciones internacionales:
 
-Project Alice has attracted some interest among the Chinese-speaking Victora 2 community. Due to the language barrier and other logistical issues, most of this community is not present on our discord. To help bridge the gap, we will be working with some members of that community to try to provide translations into Chinese of our monthly updates and other key pieces of the documentation. If you are in contact with other non-English-speaking communities that are interested in the project and are willing to do the translation work required, we would be happy to support other languages as well.
+El proyecto Alice ha atraído algún en la comunidad China de Victoria 2. Dado principalmente a la barrera del lenguaje y a otros problemas logísticos, la mayoría de la comunidad no se encuentra presente en nuestro Discord. Para ayudar a reducir la brecha, trabajaremos con algunos miembros de la comunidad para proveer traducciones al Chino en nuestras actualizaciones mensuales y otros documentos clave. Si estás en contacto con algún miembro de alguna comunidad que no es de habla inglesa, estás interesado en el proyecto y estás dispuesto a hacer las traducciones necesarias, estaríamos felices de incluir otros lenguajes.
 
-## Next month
+## Para el próximo mes
 
-The upcoming month will be focused primarily on implementing things associated with the military and warfare, both in the ui and in the game internals. This means things such as moving units, resolving battles, declaring wars, and sending peace offers. My hope is to get to a kind of punching-bag version by the end of the next month, which is a game where everything basically works but where the AI is totally passive.
+El mes siguiente se enfocará primariamente en la implementación de cosas asociadas al ejército y guerra, ambos en la interfaz de usuario y en las mecanicas internas del juego. Esto significa que cosas tales como mover unidades, decidir batallas, declarar guerras, y enviar ofertas de paz. Mi esperanza es llegar a una versión de prueba para el próximo mes, la cuál es un juego donde todo básicamente funciona pero la IA es totalmente pasiva.
 
-## Thinking about AI
+## Pensando sobre la IA
 
-While there is a fair amount of work that needs to go into the military side of things, none of it is particularly technically challenging. The same cannot be said about implementing the AI. I currently plan on treating AI decision making as essentially independent processes tied together by a shallow understanding of its overall situation, at most. A world-class AI would take everything into consideration when making decisions, but I think that we can still get something acceptable by splitting up its decision making. And, importantly for getting things done on time, splitting up the AI in this way makes it easy to divide the work between different team members, since the person working on how the AI chooses to build factories doesn't then have to worry about how the AI chooses to make alliances.
+Aunque hay una cantidad de trabajo importante que debe dirigirse al lado militar de las cosas, ninguna de ellas presenta un desafío técnico particular.  Lo mismo no puede decirse de la implementación de la IA. Planeó actualmente en afrontar el proceso de toma de decisiones de la IA como un conjunto de procesos independientes conectados por un entendimiento poco profundo de la situación subyacente, en el mejor de los casos.  Una inteligencia artificial de clase mundial tomaría todo en cuenta a la hora de tomar decisiones, pero pienso que aún podemos obtener un resultado aceptable al dividir su proceso de toma de decisiones. Y, más importantemente para lograr que se propone a tiempo, dividir la IA de esta manera facilita la división del trabajo  entre diferentes miembros del equipo, dado que la persona trabajando en como la IA escoge construir fábricas no debe preocuparse sobre como la IA escoge elaborar alianzas. 
 
-If you are interested in working on the AI and know some C++, this would be a good time to join the team (please join the team), as you could use the time we are working on the military and warfare to become familiar with the project before we move on to the AI.
+Si estás interesado en trabajar en la IA y sabes C++, este sería un buen momento para unirse al equipo (por favor únete), ya que podrías usar el tiempo trabajando en el ejercito y la guerra para familiarizarte con el proyecto antes de movernos a la IA.
 
-## The End
+## El fin:
 
-See you again next month! (or, if you can't wait that long, join us on [discord](https://discord.gg/QUJExr4mRn))
+Los veremos el próximo mes! (O, si no puedes esperar tanto tiempo, unete a nosotros en [discord](https://discord.gg/QUJExr4mRn))
